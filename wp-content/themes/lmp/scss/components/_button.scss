@@ -1,0 +1,32 @@
+.button
+{
+  padding:11px 25px;
+  background:$brand-color;
+  color:white;
+  text-decoration: none;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  border:1px solid transparent;
+  display: inline-block;
+  font-size:12px;
+  text-transform: uppercase;
+  @include box-sizing;
+
+  &:hover
+  {
+    border:1px solid $brand-color;
+    color:$brand-color;
+    background:white;
+    text-decoration: none;
+  }
+  &.large
+  {
+    width: 60%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin:auto;
+    display: block;
+  }
+}

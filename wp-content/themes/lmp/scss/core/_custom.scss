@@ -1,0 +1,41 @@
+body
+{
+  font-family: $avenir;
+  padding-top:120px;
+}
+
+.search 
+{
+  #slider
+  {
+    border-bottom:1px solid $grey-lightest;
+    height:120px !important;
+    margin-bottom:50px;
+    .slides
+    {
+      display: none;
+    }
+  }
+}
+
+
+// Search Page
+.search-results
+{
+  .search-title
+  {
+    margin-bottom: 30px;
+    padding-bottom:30px;
+    border-bottom:1px solid $grey-lightest;
+
+  }
+  .post
+  {
+      h2
+      {
+        font-size: 18px;
+        padding:10px 0;
+        border-bottom:1px solid $grey-lightest;
+      }
+  }
+}

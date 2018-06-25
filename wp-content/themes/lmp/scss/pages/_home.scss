@@ -1,0 +1,166 @@
+#about {
+  padding: 50px 0;
+
+  .content-holder {
+    max-width: 80%;
+    h3 {
+      font-weight: 900;
+      line-height: normal;
+      margin-bottom: 45px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+  }
+  .image-holder {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+}
+
+#events {
+  padding: 50px 0;
+  h2 {
+    margin-bottom: 50px;
+  }
+}
+
+#consultancy {
+  padding: 50px 0;
+
+  h3 {
+    font-weight: 900;
+    margin-bottom: 40px;
+  }
+  p {
+    max-width: 70%;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .read-more {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .padding-left {
+    padding-left: 60px;
+  }
+
+}
+
+#partner {
+  background: $grey-lightest;
+  border-top: 1px solid $grey-light;
+  border-bottom: 1px solid $grey-light;
+  margin-bottom: $spacing;
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  .logos-holder {
+    text-align: center;
+    margin-top: $spacing;
+    .partner-logo {
+      display: inline-block;
+      min-width: 230px;
+      border-right: 1px solid $grey-light;
+      &:first-child {
+        border-left: 1px solid $grey-light;
+      }
+
+    }
+  }
+
+}
+
+#blog
+{
+ .margin-left
+ {
+   margin-left:$spacing;
+ }
+
+  .display-table
+  {
+    .display-table-cell
+    {
+      vertical-align: top !important;
+    }
+  }
+
+
+  .posts-holder
+  {
+    margin-top:$spacing;
+
+    .post
+    {
+      border:1px solid $grey-light;
+      padding:30px;
+      display:block;
+      width:calc(100% - 30px);
+      text-decoration: none;
+      color:black;
+      margin-bottom: 30px;
+      box-shadow: 5px 5px 0 rgba(0,0,0,0.05   );
+
+      .display-table
+      {
+
+
+        .display-table-cell
+        {
+
+          .content-holder
+          {
+            margin-left:30px;
+            .category
+            {
+              color:$grey;
+              font-size:14px;
+              font-weight: 300;
+            }
+            h3
+            {
+              font-size:20px;
+              font-weight:900;
+              margin:10px 0;
+            }
+            p
+            {
+              font-size: 13px;
+              font-weight: 300;
+              line-height:19px;
+            }
+          }
+
+          &:first-child
+          {
+            width:30%;
+            .image-holder
+            {
+              width:100%;
+              img
+              {
+                width: 100%;
+                height:100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@mixin transition($property:all) {
+
+    -webkit-transition: $property .35s;
+    -moz-transition: $property .35s;
+    -ms-transition: $property .35s;
+    -o-transition: $property .35s;
+    transition: $property .35s;
+}
+
+@mixin translate($v1,$v2) {
+    -webkit-transform: translate($v1, $v2);
+    -moz-transform: translate($v1, $v2);
+    -ms-transform: translate($v1, $v2);
+    -o-transform: translate($v1, $v2);
+    transform: translate($v1, $v2);
+}
+
+@mixin translateX($v) {
+    -webkit-transform: translateX($v);
+    -moz-transform: translateX($v);
+    -ms-transform: translateX($v);
+    -o-transform: translateX($v);
+    transform: translateX($v);
+}
+
+@mixin translateY($v) {
+    -webkit-transform: translateY($v);
+    -moz-transform: translateY($v);
+    -ms-transform: translateY($v);
+    -o-transform: translateY($v);
+    transform: translateY($v);
+}
+
+@mixin rotate($v) {
+
+    -webkit-transform: rotate($v);
+    -moz-transform: rotate($v);
+    -ms-transform: rotate($v);
+    -o-transform: rotate($v);
+    transform: rotate($v);
+
+}
+
+@mixin border-radius($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin box-sizing() {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+

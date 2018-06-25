@@ -1,0 +1,208 @@
+#event {
+
+  .grey-bg
+  {
+    background:$grey-lightest;
+    padding: $spacing 0;
+    margin-bottom:$spacing;
+
+  }
+
+  .event-subheading {
+    padding: 80px 0;
+  }
+  .heading {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 45px 0 30px;
+  }
+
+  .workshop
+  {
+    .content
+    {
+      border-bottom-color: $blue;
+    }
+  }
+
+  .seminars
+  {
+    .content
+    {
+      border-bottom-color: $orange;
+    }
+  }
+
+  .content {
+    padding-bottom: 30px;
+    border-bottom: 10px solid $brand-color;
+    margin-bottom: 30px;
+
+  }
+
+  #post-holder {
+    margin-top: $spacing;
+    position: relative;
+
+    .post {
+
+      display: inline-block;
+      margin-bottom: 40px;
+      position: relative;
+      width:100%;
+
+      .image-holder
+      {
+        height:300px;
+        width:100%;
+
+        img
+        {
+          width: 100%;
+          height:100%;
+          object-fit: cover;
+        }
+      }
+
+      .post-date {
+        font-size: 24px;
+        margin-top: 15px;
+      }
+      .post-title {
+        font-size: 36px;
+        color: $brand-color;
+        margin-bottom: 20px;
+      }
+      .post-content {
+        color: $grey;
+        font-size: 16px;
+        max-width: 75%;
+        line-height: 24px;
+      }
+
+      .button-holder {
+        display: inline-block;
+        margin-top: 30px;
+        .button {
+          margin-right: 10px;
+        }
+
+      }
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      &:nth-child(2n + 2) {
+        > div {
+          &:first-child {
+            float: right;
+          }
+        }
+      }
+
+      &:before
+      {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background: $brand-color;
+        top: 0;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &:after
+      {
+        content: '';
+        width: 17px;
+        height:17px;
+        display: inline-block;
+        background:white;
+        border:4px solid $brand-color;
+        position: absolute;
+        left:50%;
+        top:50%;
+        @include box-sizing;
+        @include border-radius(20px);
+        @include translateX(-50%);
+      }
+
+      &:first-child
+      {
+        &:before
+        {
+          top:50%;
+        }
+      }
+      &:last-child
+      {
+        &:before
+        {
+          bottom:50%;
+        }
+      }
+
+    }
+
+    &:after {
+
+
+    }
+  }
+}
+
+
+// Single Event
+
+.event-detail
+{
+  .description
+  {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom:$spacing;
+    display: block;
+  }
+  .start-date, .end-date
+  {
+    font-size: 18px;
+    font-weight: bold;
+    color:$brand-color;
+    margin-bottom: $spacing;
+    display: inline-block;
+  }
+  .end-date
+  {
+    margin-left: 50px;
+  }
+
+  .detail
+  {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+// form holder
+
+.form-holder
+{
+  border:1px solid $grey-light;
+  padding:30px;
+  margin-top: $spacing;
+  visibility: hidden;
+  opacity:0;
+  max-height:0;
+  @include border-radius(6px);
+  @include transition();
+
+  &.show
+  {
+    max-height:100px;
+    visibility: visible;
+    opacity:1;
+  }
+}

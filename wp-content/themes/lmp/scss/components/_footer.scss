@@ -1,0 +1,55 @@
+#footer
+{
+  background: $grey-dark;
+  color:$grey-light;
+  padding:70px 0 60px;
+  margin-top: $spacing;
+
+  h3
+  {
+    font-size:16px;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+  .about
+  {
+    font-size:14px;
+    font-weight: 300;
+    margin-top:30px;
+  }
+  a
+  {
+    color:$grey-light;
+  }
+  ul
+  {
+    li
+    {
+      padding-bottom:15px;
+      margin-bottom: 15px;
+      a
+      {
+        color:$grey-light;
+        text-decoration: none;
+        i
+        {
+          margin-right:20px;
+        }
+
+        &:hover
+        {
+          color:$brand-color;
+        }
+      }
+
+    }
+    &.border
+    {
+      li
+      {
+        border-bottom:1px solid $grey-light;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,34 @@
+@import "bootstrap.css";
+@import "flexslider.css";
+@import "theme.css";
+
+// Custom Variables
+@import 'var/variables';
+@import 'var/fonts';
+@import "mixins/mixins";
+@import 'var/type';
+
+// Core
+@import 'core/reset';
+@import 'core/custom';
+@import 'core/utilities';
+
+
+// Components
+@import "layout/layout";
+@import "components/button";
+@import "components/header";
+@import "components/footer";
+@import "components/eventBox";
+
+
+// Pages
+@import "pages/home";
+@import "pages/events";
+
+
+
+
+
+
+

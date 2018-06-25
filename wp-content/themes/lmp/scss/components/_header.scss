@@ -1,0 +1,275 @@
+#header {
+  margin-top: -120px;
+  .navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    padding-top: 20px;
+    background: transparent;
+    @include transition();
+    @include border-radius(0);
+
+    // Brand Logo
+    .navbar-brand {
+      float: none;
+      height: auto;
+      padding: 0;
+      line-height: normal;
+      display: inline-block;
+      margin: 0;
+    }
+
+    // Top Menu
+    .top-menu {
+      font-size: 14px;
+      font-weight: bold;
+      color:black;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 0 0 15px;
+      margin-bottom: 15px;
+      span {
+        margin: 0 5px;
+        a
+        {
+          text-decoration: none;
+          &.lang
+          {
+            text-transform: uppercase;
+            font-size: 12px;
+          }
+
+        }
+
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &.search-holder
+        {
+          form
+          {
+            display: inline-block;
+            width: 215px;
+            input
+            {
+              border:0;
+              background:transparent;
+              font-weight: normal;
+              width: 180px;
+            }
+            button
+            {
+              background:none;
+              border:0;
+            }
+          }
+
+        }
+      }
+    }
+
+    // social media
+    .social {
+      float: right;
+      ul {
+        li {
+          display: inline-block;
+          margin-left: 5px;
+          a {
+            font-size: 18px;
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+
+    // Navbar
+    #navbar {
+      padding-left: 0;
+      > li {
+        > a {
+          background: none;
+          padding: 0 10px;
+          font-size: 16px;
+          font-weight: 900;
+        }
+        &:first-child {
+          a {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    &.sticky-nav {
+      position: fixed;
+      background: white;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      -webkit-animation: __topnav .35s; /* Safari 4.0 - 8.0 */
+      animation: __topnav .35s;
+    }
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes __topnav {
+      from {
+        top: -200px;
+      }
+      to {
+        top: 0;
+      }
+    }
+
+    /* Standard syntax */
+    @keyframes __topnav {
+      from {
+        top: -200px;
+      }
+      to {
+        top: 0;
+      }
+    }
+
+    &.transparent-bg {
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+#slider
+{
+  &.one-third
+  {
+    height:75vh;
+    .slides
+    {
+      li
+      {
+        height:75vh;
+        .background-image-holder
+        {
+          height:75vh;
+        }
+        .slider-content
+        {
+          @include translateY(50%);
+        }
+      }
+    }
+  }
+  &.half
+  {
+    height:50vh;
+    .slides
+    {
+      li
+      {
+        height:50vh;
+        .background-image-holder
+        {
+          height:50vh;
+        }
+        .slider-content
+        {
+          @include translateY(50%);
+        }
+      }
+    }
+  }
+  &.none
+  {
+    height:100px;
+    border-bottom:1px solid $grey-lightest;
+    .slides
+    {
+      display: none;
+    }
+  }
+}
+
+
+.background-image-holder {
+  background-position-y: top !important;
+}
+
+.slider-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50% !important;
+  text-align: left;
+  max-width: 1170px;
+  margin: auto;
+  padding-left: 28.333333%;
+  color: black;
+  @include translateY(30%);
+
+  .title {
+    font-size: 28px;
+    font-weight: normal;
+    max-width: 90%;
+  }
+  .main_title {
+    font-size: 42px;
+    font-weight: 900;
+    margin-top: 10px;
+  }
+  .date {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .button {
+    margin-top: 20px;
+    border: 1px solid $green-dark;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    @include box-sizing;
+  }
+
+  h1 {
+    font-size: 20px;
+    color: white;
+    small {
+      font-size: 18px;
+      font-weight: normal;
+      color: white;
+      position: relative;
+      top: -20px;
+    }
+  }
+  .btn {
+    background: none;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0;
+
+  }
+  &.events
+  {
+    text-transform: uppercase;
+    @include translateY(10%);
+    .date
+    {
+      font-size: 30px;
+      font-weight: 900;
+    }
+    .title
+    {
+      font-size: 45px;
+      margin-top: -10px;
+      font-weight: 300;
+    }
+    .description
+    {
+      font-size: 18px;
+      max-width:600px;
+    }
+  }
+
+}
